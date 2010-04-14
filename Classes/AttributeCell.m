@@ -45,15 +45,15 @@
 		
         self.valueLabel = [[[UILabel alloc] initWithFrame:frame] autorelease];
 
-        UIColor alpha = [UIColor colorWithRed: 1.0
-                                        green: 1.0
-                                         blue: 1.0
-                                        alpha: 0];
+        UIColor* alpha = [UIColor colorWithRed: 1.0
+                                         green: 1.0
+                                          blue: 1.0
+                                         alpha: 0.0 ];
       
         keyLabel.textColor = [ColorCache commandColor];
         keyLabel.font = [AttributeCell keyFont];
         keyLabel.textAlignment = UITextAlignmentRight;
-        keyLabel.backgroundColor = alpha
+        keyLabel.backgroundColor = alpha;
 
         valueLabel.font = [UIFont boldSystemFontOfSize:14.0];
         valueLabel.adjustsFontSizeToFitWidth = YES;
